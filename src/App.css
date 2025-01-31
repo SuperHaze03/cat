@@ -1,0 +1,49 @@
+.cat-container {
+  background-color: #fdf2f8; /* soft pink background */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.cat-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+}
+
+.cat-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+}
+
+.cat-image-happy {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.cat-image-playful {
+  animation: bounce 1s infinite;
+}
+
+.cat-image-sleepy {
+  opacity: 0.7;
+  filter: grayscale(100%);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.cat-mood-text {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9d174d; /* deep pink text */
+}
